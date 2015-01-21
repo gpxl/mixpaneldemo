@@ -1,0 +1,3 @@
+== Mixpanel Rails Demo App
+
+This is a very basic Rails app with a very basic implementation of Mixpanel for the purposes of showing user tracking, from initial anonymous visit to a known registered user.
