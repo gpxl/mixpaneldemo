@@ -2,11 +2,12 @@
 <h1>Logged in as <%= current_user.email %></h1>
 <% else %>
 <h1>Welcome to the MixPanel Demo</h1>
+<% end %>
 <p>Using this App will populate data in Mixpanel. That's about all it will do :)</p>
 <h2>Suggested actions</h2>
 <ul>
   <li><%= link_to 'Click here', root_path(utm_medium: 'cpc', utm_source: 'adwords', utm_campaign: 'mixpanel', utm_content: 'demo time!') %> to reload page & add Google Analytics campaign data to your session.</li>
-  <% end %>
+
   <li><%= link_to 'Sign Up', new_user_registration_path %></li>
   <li><%= link_to 'Login', new_user_session_path %></li>
   <li><%= link_to 'Visit a restricted page', protected_path %></li>
